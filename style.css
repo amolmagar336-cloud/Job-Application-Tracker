@@ -1,0 +1,149 @@
+body{
+font-family: "Segoe UI",sans-serif;
+background: linear-gradient(135deg,#667eea,#764ba2);
+margin:0;
+padding:0;
+color:#333;
+}
+
+/* Header */
+
+header{
+text-align:center;
+color:white;
+padding:30px;
+font-size:28px;
+}
+
+/* Dashboard */
+
+.dashboard{
+display:flex;
+justify-content:center;
+gap:20px;
+margin:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:25px;
+width:150px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card p{
+font-size:28px;
+font-weight:bold;
+margin:10px 0 0 0;
+}
+
+.applied{
+border-top:6px solid #3498db;
+}
+
+.shortlisted{
+border-top:6px solid #2ecc71;
+}
+
+.rejected{
+border-top:6px solid #e74c3c;
+}
+
+/* Chart */
+
+.chart-container{
+width:70%;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Form */
+
+.form-section{
+width:70%;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+form{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+form input,
+form select{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+flex:1;
+}
+
+form button{
+background:#667eea;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+form button:hover{
+background:#5563d1;
+}
+
+/* Table */
+
+.table-section{
+width:80%;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#667eea;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+border-bottom:1px solid #eee;
+text-align:center;
+}
+
+button{
+background:#e74c3c;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#c0392b;
+}

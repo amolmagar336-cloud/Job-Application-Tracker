@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Job Application Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Job Application Tracker</h1>
+</header>
+
+
+<!-- DASHBOARD CARDS -->
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Total</h3>
+<p id="total">0</p>
+</div>
+
+<div class="card applied">
+<h3>Applied</h3>
+<p id="applied">0</p>
+</div>
+
+<div class="card shortlisted">
+<h3>Shortlisted</h3>
+<p id="shortlisted">0</p>
+</div>
+
+<div class="card rejected">
+<h3>Rejected</h3>
+<p id="rejected">0</p>
+</div>
+
+</div>
+
+
+
+<!-- ADD APPLICATION -->
+
+<section class="form-section">
+
+<h2>Add Application</h2>
+
+<form id="jobForm">
+
+<select id="company">
+<option value="1">Infosys</option>
+<option value="2">TCS</option>
+<option value="3">Wipro</option>
+<option value="4">Amazon</option>
+<option value="5">Google</option>
+</select>
+
+<input type="text" id="role" placeholder="Job Role">
+
+<select id="source">
+<option>LinkedIn</option>
+<option>Naukri</option>
+<option>Company Website</option>
+<option>Referral</option>
+</select>
+
+<select id="status">
+<option>Applied</option>
+<option>Shortlisted</option>
+<option>Rejected</option>
+<option>Interview Scheduled</option>
+</select>
+
+<input type="date" id="date">
+
+<button type="submit">Add Application</button>
+
+</form>
+
+</section>
+
+
+
+<!-- APPLICATION TABLE -->
+
+<section class="table-section">
+
+<h2>Applications</h2>
+
+<table id="jobTable">
+
+<tr>
+<th>Company</th>
+<th>Role</th>
+<th>Status</th>
+<th>Date</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- CHART -->
+
+<section class="chart-container">
+
+<h2>Application Analytics</h2>
+
+<canvas id="statusChart"></canvas>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
